@@ -6,9 +6,7 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
-  return drivers.filter((elem) => elem.indexOf(string) === 0)
-  //The indexOf() method returns the position of the first occurrence of a specified value in a string.
-  // in this case we are saying where the first letter(index 0) of element and string match
+  return drivers.filter((elem) => elem.charAt(0) === string.charAt(0))
 }
 
 function matchName(drivers, string) {
